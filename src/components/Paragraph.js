@@ -2,7 +2,10 @@ import React from "react";
 
 const Paragraph = () => {
   return (
-    <div className="max-w-[1115px] w-full px-4 sm:px-6 md:px-8 mt-44">
+    <div
+      className="max-w-[1115px] w-full px-4 sm:px-6 md:px-8 mt-44"
+      id="paragraph"
+    >
       <div className="text-3xl sm:text-4xl lg:text-4xl mb-8 text-[#0E202A] tracking-wide">
         <b className=" pr-2">Empowering</b>
         primary care professionals to seamlessly identify and

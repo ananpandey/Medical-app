@@ -1,20 +1,15 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const navLinks = [
-  { to: "/", text: "Home", isBold: true },
-  { to: "/aboutus", text: "About Us", isBold: false },
-  { to: "/solutions", text: "Solutions", isBold: false },
-  { to: "/blogs", text: "Blogs", isBold: false },
-  { to: "/contact", text: "Contact Us", isBold: false },
+  { to: "/#", text: "Home", isBold: true },
+  { to: "/#description", text: "About Us", isBold: false },
+  { to: "/#multicards", text: "Solutions", isBold: false },
+  { to: "/#blogs", text: "Blogs", isBold: false },
+  { to: "/#contact", text: "Contact Us", isBold: false },
 ];
 
 const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const toggleDropdown = () => {
-    console.log("toggle");
-    setIsDropdownOpen(!isDropdownOpen);
-  };
   return (
     <div className="flex">
       <div className="w-full h-22 mt-10 py-4 flex justify-between fixed z-10 bg-white text-xl cursor-pointer text-[#0E202A]">
@@ -22,28 +17,15 @@ const Navbar = () => {
           <img className="h-16 md:h-14" src="/logo.svg" alt="img" />
         </div>
         <div className="md:hidden relative">
-          <button onClick={toggleDropdown} className="mr-4 mt-4">
-            ☰
-          </button>
-          {isDropdownOpen && (
-            <div className="absolute top-12 left-0 bg-white shadow-lg rounded-md p-2">
-              <li className="block mb-2 font-bold border-b-2 border-[#9dbdcf]">
-                Home
-              </li>
-              <li className="block mb-2">About Us</li>
-              <li className="block mb-2">Solutions</li>
-              <li className="block mb-2">Blogs</li>
-              <li className="block">Contact Us</li>
-            </div>
-          )}
+          <button className="mr-4 mt-4"></button>
         </div>
         <div className={`md:flex items-center space-x-6 hidden`}>
           {navLinks.map((link, index) => (
-            <Link key={index} to={link.to}>
+            <Link key={index} to={link.to} smooth>
               <span
                 className={`mr-6 ${
                   link.isBold
-                    ? "font-extrabold contrast-150 border-b-2 border-[#9dbdcf]"
+                    ? "font-extrabold contrast-150 border-b-2 border-[#86a3b3]"
                     : "mr-4,contrast-50"
                 }`}
               >

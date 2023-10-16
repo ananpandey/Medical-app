@@ -5,7 +5,10 @@ import Card3 from "./Card3";
 
 const Card = () => {
   return (
-    <div className="bg-gradient-to-t from-[#eff7fc] via-[#f0f6fa] min-h-screen">
+    <div
+      className="bg-gradient-to-t from-[#eff7fc] via-[#f0f6fa] min-h-screen"
+      id="contact"
+    >
       <div className="mt-6 mx-4 md:mx-8 lg:ml-7 xl:ml-7">
         <span className="text-md font-bold text-[#0E202A]">WHAT WE DO</span>
         <hr className="mt-4" />

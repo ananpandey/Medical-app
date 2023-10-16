@@ -2,7 +2,7 @@ import React from "react";
 
 const LastSection = () => {
   return (
-    <div className="ml-7 mt-12 h-[663px]">
+    <div className="ml-7 mt-12 h-[663px]" id="blogs">
       <span className="mb-2">WHATS NEW</span>
       <hr className="mt-4" />
       <div className="mt-6">

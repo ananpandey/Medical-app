@@ -7,7 +7,10 @@ import MultiCard5 from "./MultiCard5";
 
 const MultiCards = () => {
   return (
-    <div className="bg-gradient-to-t from-[#eff7fc] via-[#f0f6fa] to-white h-[500px] mt-16">
+    <div
+      className="bg-gradient-to-t from-[#eff7fc] via-[#f0f6fa] to-white h-[500px] mt-16"
+      id="multicards"
+    >
       <div className="ml-7">
         <span className="mb-2 text-md font-bold text-[#0E202A]">
           HOW WE WORK

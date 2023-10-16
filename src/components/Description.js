@@ -1,5 +1,8 @@
 import React from "react";
 import DescriptionCard from "./DescriptionCard";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Description = () => {
   const backgroundStyle = {
@@ -7,8 +10,17 @@ const Description = () => {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
   };
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+  };
   return (
-    <div className="flex mt-20" style={backgroundStyle}>
+    <div className="flex mt-20" style={backgroundStyle} id="description">
       <div className="h-[500px] flex flex-col mt-40 ml-7">
         <div className="flex gap-2">
           <span className="text-white text-4xl contrast-200"> Solutions</span>
@@ -39,7 +51,7 @@ const Description = () => {
               Neural Engineering
             </span>
           </div>
-          <div className="flex flex-col mr-40">
+          <div className="flex flex-col">
             <span className="text-md font-thin flex gap-2 mt-4 text-white contrast-75">
               <img src="/banner1.svg" width={12} alt="image" />
               Immunology Research
@@ -51,11 +63,17 @@ const Description = () => {
           </div>
         </div>
       </div>
-      <div className="ml-2">
-        <DescriptionCard />
-      </div>
-      <div>
-        <DescriptionCard />
+      <div className="w-[60%]">
+        <Slider {...settings} className="w-[100%]">
+          {[1, 2].map(() => (
+            <div className="flex ml-20">
+              <div className="flex">
+                <DescriptionCard />
+                <DescriptionCard />
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );
