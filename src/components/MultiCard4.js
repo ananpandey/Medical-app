@@ -7,7 +7,7 @@ const MultiCard4 = () => {
       <div className="mt-6">
         <span className="ml-7">04.</span>
         <span>
-          <img src="/images/range4.png" alt="img" className="ml-7 mt-2" />
+          <img src="/images/range4.png" alt="card" className="ml-7 mt-2" />
         </span>
         <div className="px-6 py-4">
           <div className="font-bold text-2xl mb-2">Trails</div>

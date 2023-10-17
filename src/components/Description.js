@@ -39,25 +39,25 @@ const Description = () => {
         <div className="flex justify-between mt-4">
           <div className="flex flex-col ">
             <span className="text-md font-thin flex gap-2 mt-4 text-white contrast-75">
-              <img src="/banner1.svg" width={12} alt="image" />
+              <img src="/banner1.svg" width={12} alt="card" />
               Neural Engineering
             </span>
             <span className="text-md font-thin flex gap-2 mt-4 text-white contrast-75">
-              <img src="/banner1.svg" width={12} alt="image" />
+              <img src="/banner1.svg" width={12} alt="card" />
               Neural Engineering
             </span>
             <span className="text-md font-thin flex gap-2 mt-4 text-white contrast-75">
-              <img src="/banner1.svg" width={12} alt="image" />
+              <img src="/banner1.svg" width={12} alt="card" />
               Neural Engineering
             </span>
           </div>
           <div className="flex flex-col">
             <span className="text-md font-thin flex gap-2 mt-4 text-white contrast-75">
-              <img src="/banner1.svg" width={12} alt="image" />
+              <img src="/banner1.svg" width={12} alt="card" />
               Immunology Research
             </span>
             <span className="text-md font-thin flex gap-2 mt-4 text-white contrast-75">
-              <img src="/banner1.svg" width={12} alt="image" />
+              <img src="/banner1.svg" width={12} alt="card" />
               Immunology Research
             </span>
           </div>
@@ -65,8 +65,8 @@ const Description = () => {
       </div>
       <div className="w-[60%]">
         <Slider {...settings} className="w-[100%]">
-          {[1, 2].map(() => (
-            <div className="flex ml-20">
+          {[1, 2].map((index) => (
+            <div className="flex ml-20" key={index}>
               <div className="flex">
                 <DescriptionCard />
                 <DescriptionCard />

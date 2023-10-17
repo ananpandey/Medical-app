@@ -7,7 +7,7 @@ const Paragraph = () => {
       id="paragraph"
     >
       <div className="text-3xl sm:text-4xl lg:text-4xl mb-8 text-[#0E202A] tracking-wide">
-        <b className=" pr-2">Empowering</b>
+        <span className=" pr-2 font-bold">Empowering</span>
         primary care professionals to seamlessly identify and
         <br />
         engage with eligible patients for clinical trial opportunities.

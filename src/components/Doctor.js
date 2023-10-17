@@ -21,11 +21,11 @@ const Doctor = () => {
           <div key={index} className="flex flex-col md:flex-row mt-4 md:mt-28">
             <div className="flex">
               <span className="mb-6 md:mb-0 md:mr-8">
-                <img src="/banner3.png" alt="image" />
+                <img src="/banner3.png" alt="card" />
               </span>
               <div className="flex flex-col md:ml-12 mt-6 md:mt-0">
                 <span className="mb-4 md:mb-0">
-                  <img src="/banner4.png" alt="image" />
+                  <img src="/banner4.png" alt="card" />
                 </span>
                 <span className="mt-4 text-xl md:text-2xl lg:text-4xl">
                   Doctus propriae erroribus an eam, mel agam modus civibus,

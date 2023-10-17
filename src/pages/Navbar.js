@@ -2,11 +2,11 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 const navLinks = [
-  { to: "/#", text: "Home", isBold: true },
-  { to: "/#description", text: "About Us", isBold: false },
-  { to: "/#multicards", text: "Solutions", isBold: false },
-  { to: "/#blogs", text: "Blogs", isBold: false },
-  { to: "/#contact", text: "Contact Us", isBold: false },
+  { to: "#", text: "Home", isBold: true },
+  { to: "#description", text: "About Us", isBold: false },
+  { to: "#multicards", text: "Solutions", isBold: false },
+  { to: "#blogs", text: "Blogs", isBold: false },
+  { to: "#contact", text: "Contact Us", isBold: false },
 ];
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="flex">
       <div className="w-full h-22 mt-10 py-4 flex justify-between fixed z-10 bg-white text-xl cursor-pointer text-[#0E202A]">
         <div className="flex items-center ml-4 md:ml-7">
-          <img className="h-16 md:h-14" src="/logo.svg" alt="img" />
+          <img className="h-16 md:h-14" src="/logo.svg" alt="card" />
         </div>
         <div className="md:hidden relative">
           <button className="mr-4 mt-4"></button>

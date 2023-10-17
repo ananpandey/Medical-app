@@ -8,14 +8,14 @@ const LastSection = () => {
       <div className="mt-6">
         <span className=" text-4xl">News & Stories</span>
         <div className="flex mt-16 gap-3">
-          <img src="/images/section1.png" alt="img" />
-          <img src="/images/section2.png" alt="img" />
-          <img src="/images/section3.png" alt="img" />
+          <img src="/images/section1.png" alt="card" />
+          <img src="/images/section2.png" alt="card" />
+          <img src="/images/section3.png" alt="card" />
         </div>
         <div className="flex justify-between mt-6">
-          <img src="/images/button.png" alt="img" />
-          <img src="/images/button.png" alt="img" />
-          <img src="/images/button.png" alt="img" className="mr-[330px]" />
+          <img src="/images/button.png" alt="card" />
+          <img src="/images/button.png" alt="card" />
+          <img src="/images/button.png" alt="card" className="mr-[330px]" />
         </div>
         <div className="flex justify-between mt-6 text-2xl">
           <span>
@@ -38,21 +38,21 @@ const LastSection = () => {
           <div className=" flex gap-2">
             <span>John Doe</span>
             <span>
-              <img src="/images/star.png" alt="img" className="mt-2" />
+              <img src="/images/star.png" alt="card" className="mt-2" />
             </span>
             <span>11/09/2023</span>
           </div>
           <div className="flex gap-2">
             <span>John Doe</span>
             <span>
-              <img src="/images/star.png" alt="img" className="mt-2" />
+              <img src="/images/star.png" alt="card" className="mt-2" />
             </span>
             <span>11/09/2023</span>
           </div>
           <div className="flex gap-2">
             <span>John Doe</span>
             <span>
-              <img src="/images/star.png" alt="img" className="mt-2" />
+              <img src="/images/star.png" alt="card" className="mt-2" />
             </span>
             <span className="mr-[330px]">11/09/2023</span>
           </div>
@@ -60,7 +60,7 @@ const LastSection = () => {
         <div className="mt-12 flex justify-center">
           <button
             type="button"
-            class="text-white bg-[#9DBDCF]   font-medium rounded-lg text-xl px-12 py-4 mr-2 mb-2 "
+            className="text-white bg-[#9DBDCF]   font-medium rounded-lg text-xl px-12 py-4 mr-2 mb-2 "
           >
             View All
           </button>

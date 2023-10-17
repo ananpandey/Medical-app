@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BsGlobeAmericas } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import DropDown from "../components/DropDown";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
+  const dropDownRef = useRef(null);
+  useEffect(() => {
+    const handleClick = (e) => {
+      if (dropDownRef.current && !dropDownRef.current?.contains(e.target)) {
+        setShow(false);
+      }
+    };
+    document.addEventListener("click", handleClick);
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
+  const toggleDropDown = () => {
+    setShow(!show);
+  };
   return (
     <div className="flex">
-      <div className="w-full fixed h-10 bg-[#0e202a] flex justify-between z-10 ">
+      <div className="w-full fixed h-10 bg-[#0e202a] flex justify-between z-10 cursor-pointer">
         <div className="flex items-center ">
           <span className="ml-8 md:ml-8 text-white font-extralight text-sm md:text-base">
             Healthcare Global
@@ -17,7 +34,11 @@ const Header = () => {
           <span className="text-white font-extralight text-sm md:text-base ml-2 md:ml-4 hidden md:inline">
             EN
           </span>
-          <span className="text-white text-2xl md:text-3xl">
+          <span
+            className="text-white text-2xl md:text-3xl"
+            onClick={toggleDropDown}
+            ref={dropDownRef}
+          >
             <RiArrowDropDownLine />
           </span>
         </div>
@@ -34,6 +55,7 @@ const Header = () => {
           </span>
         </div>
       </div>
+      {show && <DropDown />}
     </div>
   );
 };
