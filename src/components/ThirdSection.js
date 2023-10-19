@@ -1,7 +1,7 @@
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
-const CardIntro = () => {
+const ThirdSection = () => {
   return (
     <div className="flex ml-7 mt-12 flex-col md:flex-row">
       <span className="mr-6 md:mr-12">
@@ -56,4 +56,4 @@ const CardIntro = () => {
     </div>
   );
 };
-export default CardIntro;
+export default ThirdSection;

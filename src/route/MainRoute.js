@@ -1,9 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
-import Navbar from "./Navbar";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 
-const AuthLayout = () => {
+const MainRoute = () => {
   return (
     <div>
       <Header />
@@ -12,4 +12,4 @@ const AuthLayout = () => {
     </div>
   );
 };
-export default AuthLayout;
+export default MainRoute;

@@ -2,7 +2,7 @@ import React from "react";
 import Card4 from "./Card4";
 import Card5 from "./Card5";
 
-const Image = () => {
+const SecondSection = () => {
   return (
     <div className="ml-8 relative mt-14">
       <div className="relative block">
@@ -19,4 +19,4 @@ const Image = () => {
     </div>
   );
 };
-export default Image;
+export default SecondSection;

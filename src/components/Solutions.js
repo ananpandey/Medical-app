@@ -5,7 +5,7 @@ import MultiCard3 from "./MultiCard3";
 import MultiCard4 from "./MultiCard4";
 import MultiCard5 from "./MultiCard5";
 
-const MultiCards = () => {
+const Solutions = () => {
   return (
     <div
       className="bg-gradient-to-t from-[#eff7fc] via-[#f0f6fa] to-white h-[500px] mt-16"
@@ -32,4 +32,4 @@ const MultiCards = () => {
     </div>
   );
 };
-export default MultiCards;
+export default Solutions;

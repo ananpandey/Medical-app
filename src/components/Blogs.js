@@ -1,6 +1,6 @@
 import React from "react";
 
-const LastSection = () => {
+const Blogs = () => {
   return (
     <div className="ml-7 mt-12 h-[663px]" id="blogs">
       <span className="mb-2">WHATS NEW</span>
@@ -60,7 +60,7 @@ const LastSection = () => {
         <div className="mt-12 flex justify-center">
           <button
             type="button"
-            className="text-white bg-[#9DBDCF]   font-medium rounded-lg text-xl px-12 py-4 mr-2 mb-2 "
+            className="text-white bg-[#9DBDCF]   font-medium rounded-lg text-xl px-12 py-4 mr-2 mb-2"
           >
             View All
           </button>
@@ -69,4 +69,4 @@ const LastSection = () => {
     </div>
   );
 };
-export default LastSection;
+export default Blogs;

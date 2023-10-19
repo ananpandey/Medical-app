@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Doctor = () => {
+const FourthSection = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -47,4 +47,4 @@ const Doctor = () => {
   );
 };
 
-export default Doctor;
+export default FourthSection;

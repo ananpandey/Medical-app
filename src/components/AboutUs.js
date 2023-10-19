@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Description = () => {
+const AboutUs = () => {
   const backgroundStyle = {
     backgroundImage: `url('/bg.svg')`,
     backgroundSize: "cover",
@@ -78,4 +78,4 @@ const Description = () => {
     </div>
   );
 };
-export default Description;
+export default AboutUs;

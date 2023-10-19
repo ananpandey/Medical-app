@@ -1,13 +1,13 @@
 import React from "react";
 
-const Paragraph = () => {
+const FirstSection = () => {
   return (
     <div
       className="max-w-[1115px] w-full px-4 sm:px-6 md:px-8 mt-44"
       id="paragraph"
     >
       <div className="text-3xl sm:text-4xl lg:text-4xl mb-8 text-[#0E202A] tracking-wide">
-        <span className=" pr-2 font-bold">Empowering</span>
+        <span className=" pr-2 font-extrabold">Empowering</span>
         primary care professionals to seamlessly identify and
         <br />
         engage with eligible patients for clinical trial opportunities.
@@ -20,4 +20,4 @@ const Paragraph = () => {
     </div>
   );
 };
-export default Paragraph;
+export default FirstSection;

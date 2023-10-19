@@ -3,7 +3,7 @@ import Card1 from "./Card1";
 import Card2 from "./Card2";
 import Card3 from "./Card3";
 
-const Card = () => {
+const Contact = () => {
   return (
     <div
       className="bg-gradient-to-t from-[#eff7fc] via-[#f0f6fa] min-h-screen"
@@ -28,4 +28,4 @@ const Card = () => {
     </div>
   );
 };
-export default Card;
+export default Contact;

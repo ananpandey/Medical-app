@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { BsGlobeAmericas } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import DropDown from "../components/DropDown";
+import DropDown from "./DropDown";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -50,9 +51,11 @@ const Header = () => {
           <span className=" text-white font-extralight text-xs md:text-sm hidden md:inline">
             Already have an account?
           </span>
-          <span className="text-white text-sm md:text-base mr-4 md:mr-8 hidden md:inline">
-            Login Now
-          </span>
+          <Link to="/login">
+            <span className="text-white text-sm md:text-base mr-4 md:mr-8 hidden md:inline">
+              Login Now
+            </span>
+          </Link>
         </div>
       </div>
       {show && <DropDown />}
